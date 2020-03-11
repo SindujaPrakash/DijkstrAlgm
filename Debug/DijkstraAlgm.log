@@ -1,2 +1,3 @@
 ﻿  DijkstraAlgm.cpp
+C:\Users\prakashs\source\repos\DijkstraAlgm\DijkstraAlgm.cpp(193,31): warning C4018: '<': signed/unsigned mismatch
   DijkstraAlgm.vcxproj -> C:\Users\prakashs\source\repos\DijkstraAlgm\Debug\DijkstraAlgm.exe
