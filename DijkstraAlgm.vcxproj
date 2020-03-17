@@ -148,6 +148,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DijkstraAlgm.cpp" />
+    <ClCompile Include="GraphData.cpp" />
+    <ClCompile Include="PriorityQueue.cpp" />
+    <ClCompile Include="ShortestPath.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GraphData.h" />
+    <ClInclude Include="PriorityQueue.h" />
+    <ClInclude Include="ShortestPath.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
