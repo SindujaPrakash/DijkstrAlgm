@@ -7,8 +7,6 @@
 #include <random>
 #include <vector>
 
-#include "PriorityQueue.h"
-#include "GraphData.h"
 #include "ShortestPath.h"
 
 using namespace std;
@@ -18,6 +16,8 @@ int main()
     int node, distanceRange;
     double density;
 
+    int sourceNode;
+
     std::cout << "To create a random graph";
     std::cout << "\n" << "Enter No of nodes\n";
     std::cin >> node;
@@ -26,14 +26,21 @@ int main()
     std::cout << "\n Enter the distance range\n";
     std::cin >> distanceRange;
 
-    GraphData g1(node);
-    g1.generateRandomGraph(distanceRange, density);
-
-    PriorityQueue p1;
+    // Class containing the Dijkstra's Algorithm
     ShortestPath s1;
-    
+    s1.setGraph(node, density, distanceRange);
 
+    std::cout << "\nEnter source node\n";
+    std::cin >> sourceNode;
+    
+    // Function to find and display the shortest path and average path length
+    s1.findShortestPath(sourceNode);
     while (1)
+    {
+
+    }
+    // To test Graph class functions
+    /*while (1)
     {
         int option, number, x, y;
         std::vector<int> list;
@@ -100,6 +107,6 @@ int main()
         default:
             break;
         }
-    }
+    }*/
 }
 

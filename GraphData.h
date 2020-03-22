@@ -1,3 +1,5 @@
+// Graph Class: Contains the Graph Data Structure
+
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -30,6 +32,8 @@ public:
             }
         }
     };
+
+    void readGraph(int node);
     void generateRandomGraph(int distanceRange, double density);
     void displayGraph();
     int getNoOfVertices();
@@ -38,6 +42,7 @@ public:
     std::vector<int> neighbors(int x);
     bool add(int x, int y, int distance);
     bool remove(int x, int y);
+    int getDistance(int source, int destination);
 };
 
 

@@ -1,3 +1,5 @@
+//Class containing the Dijkstra's algorithm
+
 #include "PriorityQueue.h"
 #include "GraphData.h"
 #include <vector>
@@ -9,17 +11,14 @@ using namespace std;
 
 class ShortestPath
 {
-protected:
-	map<int,int> sizeOfPath;
+
+private:
+	GraphData graph;
+	int noOfNodes;
+	PriorityQueue queue;
 
 public:
-	PriorityQueue pq;
-	GraphData graph;
-
-	ShortestPath() {
-
-	};
-	std::vector<int> findShortestPath(int sourceNode, int destinationNode);
-	int pathSize(int sourceNode, int destinationNode);
+	void setGraph(int node, double density, int distanceRange);
+	void findShortestPath(int sourceNode);
 };
 

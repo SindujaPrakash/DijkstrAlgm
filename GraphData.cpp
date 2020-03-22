@@ -3,6 +3,22 @@
 
 using namespace std;
 
+
+//Get Graph Input
+void GraphData::readGraph(int node)
+{
+	noOfNodes = node;
+	graph = new int* [noOfNodes];
+	for (int i = 0; i < noOfNodes; i++)
+	{
+		graph[i] = new int[noOfNodes];
+		for (int j = 0; j < noOfNodes; j++)
+		{
+			graph[i][j] = 0;
+		}
+	}
+}
+
 //Generates a random graph using density and distance range
 void GraphData::generateRandomGraph(int distanceRange, double density)
 {
@@ -24,7 +40,7 @@ void GraphData::generateRandomGraph(int distanceRange, double density)
 				double number = distribution(generator);
 				if (number <= density)
 				{
-					graph[i][j] = cost(generator);
+					graph[i][j] = graph[j][i] = cost(generator);
 					noOfEdges++;
 				}
 			}
@@ -102,5 +118,12 @@ bool GraphData::remove(int x, int y)
 	}
 	else
 		return false;
+}
+
+
+// Display distance from Node X to Node Y
+int GraphData::getDistance(int source, int destination)
+{
+	return graph[source][destination];
 }
 

@@ -1,8 +1,2 @@
 ﻿  DijkstraAlgm.cpp
-C:\Users\prakashs\source\repos\DijkstraAlgm\DijkstraAlgm.cpp(41,14): warning C4101: 'result': unreferenced local variable
-C:\Users\prakashs\source\repos\DijkstraAlgm\DijkstraAlgm.cpp(39,32): warning C4101: 'y': unreferenced local variable
-C:\Users\prakashs\source\repos\DijkstraAlgm\DijkstraAlgm.cpp(39,21): warning C4101: 'number': unreferenced local variable
-C:\Users\prakashs\source\repos\DijkstraAlgm\DijkstraAlgm.cpp(39,29): warning C4101: 'x': unreferenced local variable
-  PriorityQueue.cpp
-  Generating Code...
   DijkstraAlgm.vcxproj -> C:\Users\prakashs\source\repos\DijkstraAlgm\Debug\DijkstraAlgm.exe
